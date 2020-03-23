@@ -26,6 +26,10 @@ $wpseo_contributors_phrase = sprintf(
 ?>
 
 	<div class="tab-block">
+		<div class="yoast-paper">
+
+		</div>
+
 		<?php echo $notifier->notify(); ?>
 
 		<div class="yoast-paper">
@@ -38,9 +42,8 @@ $wpseo_contributors_phrase = sprintf(
 	</div>
 
 	<div class="tab-block">
-		<h3><?php esc_html_e( 'Credits', 'wordpress-seo' ); ?></h3>
+		<h2><?php esc_html_e( 'Credits', 'wordpress-seo' ); ?></h2>
 		<p>
-			<span class="dashicons dashicons-groups"></span>
 			<a href="<?php WPSEO_Shortlinker::show( 'https://yoa.st/yoast-seo-credits' ); ?>"><?php echo esc_html( $wpseo_contributors_phrase ); ?></a>
 		</p>
 	</div>
