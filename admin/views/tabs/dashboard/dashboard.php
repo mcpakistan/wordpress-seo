@@ -14,9 +14,6 @@
  */
 $alerts_data = Yoast_Alerts::get_template_variables();
 
-$notifier = new WPSEO_Configuration_Notifier();
-$notifier->listen();
-
 $wpseo_contributors_phrase = sprintf(
 /* translators: %1$s expands to Yoast SEO */
 	__( 'See who contributed to %1$s.', 'wordpress-seo' ),
@@ -26,9 +23,7 @@ $wpseo_contributors_phrase = sprintf(
 ?>
 
 	<div class="tab-block">
-		
-		<?php echo $notifier->notify(); ?>
-		
+
 		<div class="yoast-paper">
 			<?php require WPSEO_PATH . 'admin/views/partial-alerts-errors.php'; ?>
 		</div>
